@@ -32,3 +32,7 @@ Aggregate the points made by team:
 ```
 http://localhost:5000/?sql=select sum(points_made),team from nbastats group by team
 ```
+
+## Warning
+
+The app currently does not stop a user from sending `drop table` or `insert` statements and is absolutely insecure. I'm looking into better ways to deal with that.
