@@ -35,4 +35,4 @@ http://localhost:5000/?sql=select sum(points_made),team from nbastats group by t
 
 ## Warning
 
-The app currently does not stop a user from sending `drop table` or `insert` statements and is absolutely insecure. I'm looking into better ways to deal with that.
+The app does some very basic checking of the sql statement that is sent. It is absolutely not secure yet.
